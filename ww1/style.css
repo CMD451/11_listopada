@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* navbar */
+header{
+    width: 100%;
+    position: fixed;
+    padding: 0 70px;
+}
+nav{
+    display:flex;
+    justify-content: flex-end;
+    
+}
+header ul li{
+    display: inline-block;
+    margin-top: 40px;
+}
+header ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+}
+/* --navbar */
+
+
+section{
+    height: 100vh;
+    
+    padding: 0 70px;
+}
+.section-1{
+    background:  url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    
+}
+
+.section-1 .header-wraper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 150px;
+}
+.section-1 .header-wraper h1{
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px 1px 2px #000000;
+}
+.section-1 .header-wraper h2{
+    font-size: 35px;
+    color: rgb(255, 0, 0);
+    text-shadow: -1px 1px 2px #000000;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.circle{
+    width: 90px;
+    height: 90px;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    margin-bottom: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+}
+.circle svg{
+    color: rgb(0, 0, 0);
+    align-self: center;
+}

@@ -1,0 +1,50 @@
+body{
+    background-color:#141313;
+}
+
+.witam{
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    box-shadow: -20px 22px 23px 5px rgb(0, 0, 0);
+    border: 10px solid white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 100px;
+    left: 75px;
+}
+.a{
+    left: 140px;
+    top: 130px;
+    z-index: 100;
+    transition: 2s;
+    transform: rotate(-15deg);
+}
+
+.b{
+    z-index: 200;
+    left: 130px;
+    top: 290px;
+    transition:2s;
+    transform: rotate(38deg);
+}
+.c{
+    transition: 2s;
+    transform: rotate(-24deg);
+    top: 280px;
+    left: 30px;
+}
+.d{
+    transition: 2s;
+    transform: rotate(34deg);
+    top: 130px;
+    left: 10px;
+    background-color: tomato;
+}
+.activated_image{
+    z-index: 999;
+    transition: 2s;
+    transform: rotate(-20deg);
+    transform:scale(1.1);
+}
+

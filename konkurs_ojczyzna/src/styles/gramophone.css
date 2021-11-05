@@ -1,0 +1,39 @@
+.gramophone{
+    bottom: 0;
+    left: 0;
+    height:auto;
+    width:1.5%;
+    padding: 20px;
+    position:fixed;
+    animation-duration: 3s;
+    animation-name: slideIn;
+    z-index: 1000;
+}
+.gramophoneImage
+{
+    height:auto;
+    width:7vw;
+}
+.gramophoneOut{
+    animation-name: slideOut !important;
+    animation-duration: 6s;
+}
+.audioHtml{
+    height:3vh;
+    display: block;
+}
+@keyframes slideIn {
+    0% {
+        bottom: -40%;}
+    100%{
+        bottom:0;
+    }
+  }
+  @keyframes slideOut {
+    0% {
+        bottom:0;}
+    100%{
+        bottom: -40%;;
+    }
+  }
+

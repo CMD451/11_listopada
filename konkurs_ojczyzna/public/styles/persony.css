@@ -1,0 +1,206 @@
+
+.containerPersony{
+    display: flex;
+    flex-direction: row;
+    height:100vh;
+    background-color: black;
+
+}
+.overlay{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: max-content;
+    background-color:#404040;
+
+}
+.characterPlace{
+    width: 17%;
+    height:100%;
+    background-color:#404040;
+}
+.characterContent{
+    width: 83% ;
+    background-color:#404040;
+    height:100%;
+}
+.column{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 17%;
+    border: 6px solid red !important;
+    outline: 6px solid white !important;
+    border-top: none !important;
+    transition: 1.5s !important;
+    border-bottom: none !important;
+}
+.column:hover{
+    z-index: 100;
+    transform: scale(1.1);
+    transition: 1.5s !important;
+}
+.column:nth-child(1){
+    background-image: url(../images/dmowski.jpg);
+}
+
+
+.column:nth-child(2){
+    background-image: url(../images/c.jpg);
+}
+
+
+.column:nth-child(3){
+    background-image: url(../images/paderewski.jpg);
+}
+
+
+.column:nth-child(4){
+    background-image: url(../images/witos.jpg);
+}
+
+
+.column:nth-child(5){
+    background-image: url(../images/korfanty.jpg);
+}
+
+
+.column:nth-child(6){
+    background-image: url(../images/daszyn.jpg);
+
+}
+.blur{
+    filter: blur(3px) !important;
+  
+
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    position: fixed;
+    padding: 0 90px;
+    z-index: 999;
+    
+}
+nav{
+    display:flex;
+    justify-content: center;
+}
+
+header ul li{
+    display: inline-block;
+    padding: 20px 0;
+}
+header ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+}
+
+
+.persony-container{
+    display: flex;
+    flex-direction: row;
+    height:100%;
+}
+.persony-column-flip{
+    width: 17%;
+    height: 100%;
+}
+.persony-column{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 17%;
+    border: 6px solid red !important;
+    outline: 6px solid white !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    transform: translateX(-6px);
+}
+.persony-content{
+    width: 100%;
+    padding: 70px 100px;
+    background-color: #404040;
+    color: white;
+}
+.persony-content p{
+    margin-top: 20px;
+   font-weight: 300;
+   line-height: 1.5;
+}
+.persony-content span{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.persony-content .line{
+    width: 100%;
+    height: 15px;
+    border-bottom: 1px solid rgb(136, 136, 136);
+    text-align: center;
+    margin-top:30px ;
+}
+.persony-content .line-ufo{
+    width: 100%;
+    height: 15px;
+    border-bottom: 1px solid rgb(136, 136, 136);
+    text-align: center;
+    margin-top:100px ;
+}
+.line span, .line-ufo span{
+    font-size: 20px;
+    background-color:#404040;
+    font-weight: 300;
+    padding: 0 10px;
+    color: rgb(136, 136, 136);
+    text-transform: capitalize;
+}
+
+
+
+.persony-column:nth-child(1){
+    background-image: url(c.jpg);
+}
+.persony-row{
+
+    margin-top: 20px;
+}
+.persony-image-container-vertical{
+    float: right;
+    max-width: 20%;
+    max-height: 320px;
+    margin: 20px  0 50px 20px;
+}
+ h5{
+    text-align: center;
+
+}
+.persony-image-container-horizontal{
+    max-width: 30%;
+    max-height: 200px;
+    margin: 0px  0 50px 20px;
+    float: right;
+}
+.persony-image-container-vertical img, .persony-image-container-horizontal img{
+    width: 100%;
+    height: 100%;
+}
